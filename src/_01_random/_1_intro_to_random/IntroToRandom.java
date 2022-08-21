@@ -59,7 +59,7 @@ public class IntroToRandom {
 		/*************  Random integers with an upper and lower (negative) limit  *************/
 		
 		// Using the above example, generate 5 random numbers between -222 and 88
-
+//(high-lowest+1)+lowest
 
 	}
 }
