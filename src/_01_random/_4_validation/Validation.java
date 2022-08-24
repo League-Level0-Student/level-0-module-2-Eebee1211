@@ -44,7 +44,7 @@ public class Validation {
 		else if (randomNumber == 9) {
 			JOptionPane.showMessageDialog(null, "You have good taste in furniture");
 		}
-		JOptionPane.showInputDialog("Ask a yes or no question to the magical 8 ball"); 		
+		//JOptionPane.showInputDialog("Ask a yes or no question to the magical 8 ball"); 		
 		// 1. Use each value of randomNumber to give the user a random compliment.
 
 		// 2. Repeat all the code above 10 times

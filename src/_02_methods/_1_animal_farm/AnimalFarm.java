@@ -28,15 +28,40 @@ public class AnimalFarm {
 		/* 1. Ask the user which animal they want, then see and hear 
 		 *    the animal they chose using one of the methods below.
 		*/			 
-			
+	String animal = " ";
+	while(!animal.equalsIgnoreCase("Exit")) {
 		/* 2. Make it so that the user can keep entering new animals. */
+ animal = JOptionPane.showInputDialog("Choose an animal on the animal farm if you would like to end, write exit."); 
+ if(animal.equalsIgnoreCase("Cow")) {
+	    JOptionPane.showMessageDialog(null, "The cow is an animal in the animal farm.");
+	    moo(); 
+}
+ if(animal.equalsIgnoreCase("Duck")) {
+	    JOptionPane.showMessageDialog(null, "The duck is an animal in the animal farm.");
+	    quack(); 	    
 
+ }
+ if(animal.equalsIgnoreCase("Dog")) {
+	    JOptionPane.showMessageDialog(null, "The dog is an animal in the animal farm.");
+	    woof(); 
+ }
+	    if(animal.equalsIgnoreCase("Cat")) {
+	    	JOptionPane.showMessageDialog(null,"The cat is an animal in the animal farm."); 
+	    	meow(); 
+	    }
+	if(animal.equalsIgnoreCase("Llama")) {
+		JOptionPane.showMessageDialog(null,"The llama is an animal in the animal farm.");
+		llamaScream(); 
+	}
+	}
+	
 	}
 
 	void moo() {
 		playNoise(mooFile);
 		showImage(cowIcon);
 	}
+	
 
 	void quack() {
 		playNoise(quackFile);
