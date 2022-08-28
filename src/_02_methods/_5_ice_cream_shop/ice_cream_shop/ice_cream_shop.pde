@@ -1,12 +1,19 @@
 /*** When you are done, this program will draw an ice cream cone with 
      scoops of ice cream, sprinkles, and a cherry on top.
 ***/
-
+import javax.swing.JOptionPane;
 void setup(){
 
      size(500,500);
      
      // Call the makeIceCreamCone() method below to draw the cone for your ice cream
+makeIceCreamCone();
+  
+String flavor = JOptionPane.showInputDialog("What kind of ice cream do you like? ");
+
+addScoop(flavor);  
+fill(#F21616); 
+ellipse(250,175,50,50); 
 
      // Use the addScoop method below to add as many scoops of ice cream as you want
      // Choose a different flavor for each scoop
@@ -43,7 +50,7 @@ void addScoop(String flavor){
      else if(flavor.equalsIgnoreCase("Vanilla")){
          fill(245, 243, 227);
      } else{
-         println("ERROR: We don't have the flavor "+ flavor); 
+         JOptionPane.showMessageDialog( null, "I'm sorry we ran out of "+ flavor); 
          return;
      }
      ellipse(width/2,coneY - 50 - (SCOOPSIZE*scoops)/2,SCOOPSIZE,SCOOPSIZE);

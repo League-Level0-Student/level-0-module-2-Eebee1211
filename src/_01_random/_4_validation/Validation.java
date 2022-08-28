@@ -33,7 +33,7 @@ public class Validation {
 			JOptionPane.showMessageDialog(null,"You rule (like a tyrant)");
 		}
 		else if (randomNumber == 6) {
-			JOptionPane.showMessageDialog(null,"You Rock!(I am implying that you are literally a rock)");
+			JOptionPane.showMessageDialog(null,"You Rock!(I am implying that you are literally a rock because you have the qualities of one)");
 		}
 		else if (randomNumber == 7) {
 			JOptionPane.showMessageDialog(null, "You are awesome");
