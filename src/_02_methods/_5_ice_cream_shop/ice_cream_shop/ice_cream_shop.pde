@@ -5,15 +5,17 @@ import javax.swing.JOptionPane;
 void setup(){
 
      size(500,500);
-     
-     // Call the makeIceCreamCone() method below to draw the cone for your ice cream
-makeIceCreamCone();
+        
+    String flavor=""; 
   
-String flavor = JOptionPane.showInputDialog("What kind of ice cream do you like? ");
+     // Call the makeIceCreamCone() method below to draw the cone for your ice cream
+ while(!flavor.equalsIgnoreCase("No More Ice Cream Please!")){
+   makeIceCreamCone();
+addSprinkle(150); 
+ 
+ flavor = JOptionPane.showInputDialog("What kind of ice cream do you like? If you don't want any ice cream write No More Ice Cream Please! ");
 
 addScoop(flavor);  
-fill(#F21616); 
-ellipse(250,175,50,50); 
 
      // Use the addScoop method below to add as many scoops of ice cream as you want
      // Choose a different flavor for each scoop
@@ -21,6 +23,8 @@ ellipse(250,175,50,50);
      // Use the method provided to add some sprinkles to your ice cream
 
      // Write code to add a cherry to the top of your ice cream. Hint: ellipse
+ }
+addCherry(); 
 
 }
 
@@ -37,20 +41,34 @@ void makeIceCreamCone(){
      fill(188,126,49);
      triangle(190,320,310,300,255,500);
 }
+void addCherry(){
+ fill(#F75050);
+ ellipse(width/2,coneY - 50 - (SCOOPSIZE*scoops)/2,35,35);
 
+}
 
 void addScoop(String flavor){
      noStroke();
+   
      if(flavor.equalsIgnoreCase("chocolate")){
          fill(116,71,16);
+        
+
      }
      else if(flavor.equalsIgnoreCase("Strawberry")){
          fill( 232 ,144,129);
+       
+       
+
      }
      else if(flavor.equalsIgnoreCase("Vanilla")){
          fill(245, 243, 227);
+        
+       
+
      } else{
          JOptionPane.showMessageDialog( null, "I'm sorry we ran out of "+ flavor); 
+       
          return;
      }
      ellipse(width/2,coneY - 50 - (SCOOPSIZE*scoops)/2,SCOOPSIZE,SCOOPSIZE);
