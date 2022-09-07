@@ -10,21 +10,21 @@ public class FixTheRandom {
 	
 	public static void main(String[] args) {
 		
-		Random random = new Random();
+		Random randomMaker = new Random();
+		//int randomNumber = randomMaker.nextInt(10);
+		int number = randomMaker.nextInt(10-5+1)+5;
 		
-		int numnber = random.nextInt(5);
-		
-		if (numnber == 5) {
+		if (number == 5) {
 			System.out.println("FIVE");
-		} else if (numnber == 6) {
+		} else if (number == 6) {
 			System.out.println("SIX");
-		} else if (numnber == 7) {
+		} else if (number == 7) {
 			System.out.println("SEVEN");
-		} else if (numnber == 8) {
+		} else if (number == 8) {
 			System.out.println("EIGHT");
-		} else if (numnber == 9) {
+		} else if (number == 9) {
 			System.out.println("NINE");
-		} else if (numnber == 10) {
+		} else if (number == 10) {
 			System.out.println("TEN");
 		}
 	}
