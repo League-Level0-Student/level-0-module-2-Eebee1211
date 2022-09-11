@@ -12,7 +12,7 @@ public class Validation {
 		
 		Random randomMaker = new Random();
 		
-		int randomNumber = randomMaker.nextInt(10);
+		int randomNumber = randomMaker.nextInt(6)+5;
 		
 				if (randomNumber == 0) { 
 			JOptionPane.showMessageDialog(null, "You are wonderful(ly annoying)" );
