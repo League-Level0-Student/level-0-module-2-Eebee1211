@@ -9,6 +9,7 @@ public class string_conversion {
 String quantity = JOptionPane.showInputDialog("Enter in a number");
 int num = Integer.parseInt(quantity); 		
 		
+
 	}
 
 }
